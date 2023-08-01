@@ -1,6 +1,8 @@
 # 2-lift-neural-net
 
+
 **Overview**
+
 In this project, guided by recent-(ish) results in graph theory, I investigate the possibility of reducing the number of training parameters
 in hidden neural network layers by a factor of 2 with little to no reduction in network performance, by constructing such layers from random 2-lifts 
 of a layer with 1/2 the number of input and output vertices and 1/4 the number of training parameters.
@@ -26,13 +28,17 @@ Here we run into a roadblock because the proof in Marcus-Spielman-Srivastava is 
 nearly Ramanujan with high probability. Hence in this project I construct a custom neural network layer in Tensorflow as a random 2-lift of a smaller dense layer, 
 include it in a neural network for an image classification task, and keep track of how its spectral gap corresponds to the loss and accuracy of the resulting network.
 
+
 **Sources**
+
 Y. Bilu and N. Linial: Lifts, discrepancy and nearly optimal spectral gap. Combinatorica 26 (2006), 495-519. http://dx.doi.org/10.1007/s00493-006-0029-7.
 
 J. Friedman: Relative expanders or weakly relatively Ramanujan graphs. Duke Math.J . 118(1) (2003), 19–35.
 
 A. Marcus, D. Spielman, and N. Srivastava: Interlacing families I: Bipartite Ramanujan graphs of all degrees. Annals of Mathematics 182 (2015), 307-325.
 
+
 **Acknowledgements**
+
 I would like to thank Darren Upton (Jefferson Laboratories, Old Dominion University Physics) for helpful discussions & troubleshooting.
 This project was motivated by texts I read under the guidance of my MS thesis advisor, Prof. Thomas Koberda (University of Virginia Mathematics).
